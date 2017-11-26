@@ -1,0 +1,147 @@
+/*
+TeaCozy
+Andrew Ferguson
+11/12/2017
+
+style.css is a support file for index.html
+*/
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4{
+  padding: 0px;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* header */
+
+header {
+  height: 69px;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 10;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+header nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+header nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+header nav a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+/* main */
+#main {
+  padding-top: 69px;
+  width: 1200px;
+  opacity: .9;
+  margin: auto;
+}
+
+/* mission */
+#mission {
+  height: 700px;
+  background-image: url("../../resources/images/img-mission-background.jpg");
+}
+
+.mission-banner {
+  margin: auto;
+  width: 100%;
+  background-color: black;
+}
+
+/* month */
+#month{
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.item{
+  padding: 5px;
+}
+
+.item img{
+  height: 200px;
+  margin: 10px;
+  display: block;
+}
+
+.item span{
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* locations */
+
+.container.locations {
+  padding-top: 5px;
+}
+
+#locations {
+  background-image: url("../../resources/images/img-locations-background.jpg");
+  height: 500px;
+  padding-top: 70px;
+}
+
+#locations .container {
+  margin: auto;
+  width: 1100px;
+}
+
+.location {
+  opacity: 1.0;
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1.0;
+}
+
+/* contact */
+
+#contact {
+  height: 200px;
+}
+
+/* footer */
+
+footer {
+  text-align: left;
+  padding-left: 20px;
+}
